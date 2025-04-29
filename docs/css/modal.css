@@ -1,0 +1,80 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  width: 50%;
+  max-width: 500px;
+  margin: 10% auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.modal-content h2 {
+  color: #1F61A7;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "Anton", serif;
+  text-align: center;
+  margin: 0%;
+}
+
+.modal-content h4{
+  color: #2f2f2f;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0%;
+
+}
+
+.modal-content p{
+    color: #2f2f2f;
+
+  
+  }
+.modal-content ul{
+    color: #2f2f2f;
+    font-family: "Montserrat", sans-serif;
+  }
+
+.modal-content a {
+  padding: 0.4rem 1.5rem;
+  cursor: pointer;
+  border-width: 0.1px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  background-color: #d222a8;
+  color: white;
+  border: solid white;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-self: center;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap; /* Impede que o texto quebre */
+  overflow: hidden; /* Garante que o conteúdo não ultrapasse os limites */
+  text-overflow: ellipsis; /* Adiciona "..." caso o texto seja muito grande */
+
+}
+
+.close {
+  float: right;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #2f2f2f;
+}
+
+.github-icon {
+  width: 40px;
+  margin-top: 10px;
+}

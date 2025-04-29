@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Patua+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
+
+    <title>Beatriz Roberto Montanini</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="#sobre-mim">Sobre Mim</a>
+      <a href="#projetos-academicos">Projetos Acadêmicos</a>
+      <a href="#projetos-pessoais">Projetos Pessoais</a>
+    </nav>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 id="modal-title">Detalhes do Projeto</h2>
+    <h4>Tecnologias utilizadas:</h4>
+    <ul id="tech-stack-list"></ul>
+    <a id="github-link" href="#" target="_blank">Repositório</a>
+  </div>
+</div>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+      <div class="grid-container">
+        <div class="profile-picture">
+          <img src="./assets/img/perfil.png" alt="Minha Figura" />
+        </div>
+        <div class="info">
+          <h1 class="title">Beatriz Roberto Montanini</h1>
+          <p>
+            Me formando no curso de
+            <strong>Desenvolvimento de Software Multiplataforma</strong> na
+            Fatec Jacareí.
+          </p>
+          <p>
+            Com um ano e meio de experiência profissional em desenvolvimento de
+            software com ênfase em prototipação e experiência do usuário.
+          </p>
+          <div class="buttons">
+            <a href="#sobre-mim">Sobre Mim</a>
+            <a href="#projetos-academicos">Projetos Acadêmicos</a>
+            <a href="#projetos-pessoais">Projetos Pessoais</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Sobre Mim -->
+    <section id="sobre-mim" class="sobre-mim">
+      <div class="sobre-text">
+        <h2>Sobre Mim</h2>
+        <div class="sobre-paragrafo">
+          <p>
+            Desenvolvedora de Software no último ano de graduação em
+            Desenvolvimento de Software Multiplataforma. Atuo como estagiária em
+            uma Startup, onde crio desde o protótipo até a programação final do
+            projeto.
+          </p>
+          <p>
+            Fui monitora da matéria Algoritmos e Lógica de Programação, onde
+            auxiliei alunos do meu e de outros cursos com suas dificuldades no
+            assunto.
+          </p>
+          <p>
+            Minhas habilidades vão desde a concepção de protótipos usando
+            fundamentos de UX e UI até a programação dos mesmos, além de
+            trabalhar e liderar equipes com metodologias ágeis.
+          </p>
+        </div>
+      </div>
+      <div class="sobre-img">
+        <img src="./assets/img/enfeite-1.png" alt="Enfeite gráfico" />
+      </div>
+    </section>
+
+    <!-- Projetos Acadêmicos -->
+    <section id="projetos-academicos" class="projetos-academicos">
+      <div class="projetos-conteudo">
+        <div class="conteudo-projeto">
+          <h2>Projetos Acadêmicos</h2>
+          <div class="card">
+            <img src="./assets/img/nutrilife.png" alt="Minha Figura" />
+            <div>
+              <p>
+                Aplicação de controle e acompanhamento calorico de forma
+                interativa e dinamica com implementação de IOT para contagem de
+                passos. Nutrilife tem por objetivo ser uma ferramenta para uma alimentação mais saudavel, levando em conta o publico alvo abrangente, sua interface reflete isso sendo de facil utilização e com mecanicos visuais abrangentes.
+              </p>
+              <button
+                class="open-modal"
+                data-title="NutriLife"
+                data-tech="Typescript, Nest.js, Arduino, React Native, Expo, Figma e Canva "
+                data-link="https://github.com/noctagroup/nutrilife"
+              >
+                Saiba Mais
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./assets/img/terrageo.png" alt="Minha Figura" />
+            <div>
+              <p>
+                TerraGeo Manager tem como objetivo ser uma interface visual e
+                interativa para gerenciamento de equipes que fazem mapeamento
+                geoespacial, gerando estatisticas sobre o desenvolvimento do
+                projeto e aqueles que trabalham neles. Facilitando o
+                gerenciamento para gestores da equipe e possibilitando a facil
+                visualização da produtividade de projetos e membros.
+              </p>
+              <button
+                class="open-modal"
+                data-title="TerraGeo Manager"
+                data-tech="Typescript, React, Postgres, MongoDB, Jest, Figma, Canva, Bibliotecas Bootstrap e MUI."
+                data-link="https://github.com/TerraGeoManager/TerraGeoManager"
+              >
+                Saiba Mais
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./assets/img/pdali.png" alt="Minha Figura" />
+            <div>
+              <p>
+                Um aplicativo web peer-to-peer para conectar proprietários e
+                pessoas interessadas em alugar bicicletas. A aplicação faz a
+                intermediação entre as partes, filtros para facilitação de
+                busca, avaliação de produto e usuario e interface de facil
+                utilização.
+              </p>
+              <button
+                class="open-modal"
+                data-title="Pdali"
+                data-tech="Typescript, React, Postgres, Figma, Canva, Bibliotecas Bootstrap e MUI "
+                data-link="https://github.com/projetoPDali/projetoPDali"
+              >
+                Saiba Mais
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="enfeite-projetos">
+          <img src="./assets/img/enfeite-2.png" alt="Minha Figura" />
+          <img src="./assets/img/enfeite-3.png" alt="Minha Figura" />
+        </div>
+      </div>
+    </section>
+    <!-- Projetos Pessoais -->
+    <section id="projetos-pessoais" class="projeto-pessoal">
+      <div class="projetos-conteudo-pessoal">
+        <div class="conteudo-projeto">
+          <h2>Projetos Pessoais</h2>
+          <div class="card">
+            <img src="./assets/img/anima.png" alt="Minha Figura" />
+            <div>
+              <p>
+                Anima é um projeto para a criação de uma comunidade de concepção e compartilhamento de criticas e avaliações focada em animaçoes orientais, mas com o foco em fãs brasileiros e falantes da lingua portuguesa. O design foi projetado para ser de facil utilização sem perder o ludico do universo das animaçoes ao qual é inspirado.
+              </p>
+              <a class="botao-pessoal" href="assets/anima.pdf">Ver Layout</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./assets/img/libre.png" alt="Minha Figura" />
+            <div>
+              <p>
+                Libre é a simulação de um catalogo online para uma biblioteca. Sua intenção é que seja uma interface online para o que se encontraria na propria biblioteca, sendo possivel fazer buscas por categorias, titulos ou autores. O layout é focado em simular algo antigo, mas sem perder a praticidade do novo.
+              </p>
+              <a class="botao-pessoal" href="assets/libre.pdf">Ver Layout</a>
+            </div>
+          </div>
+        </div>
+        <div class="enfeite-projetos">
+          <img src="./assets/img/enfeite-5.png" alt="Minha Figura" />
+          <img src="./assets/img/enfeite-6.png" alt="Minha Figura" />
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
