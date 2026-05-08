@@ -6,72 +6,137 @@
   top: 0;
   width: 100%;
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .modal-content {
   background-color: white;
-  padding: 20px;
-  width: 50%;
-  max-width: 500px;
-  margin: 10% auto;
-  background-color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 2.5rem;
+  width: 90%;
+  max-width: 600px;
+  margin: 5% auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  animation: slideIn 0.3s ease-out;
 }
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .modal-content h2 {
   color: #1F61A7;
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 1.8rem;
+  font-weight: 600;
   font-family: "Anton", serif;
   text-align: center;
-  margin: 0%;
+  margin: 0 0 1.5rem 0;
+  border-bottom: 3px solid #d222a8;
+  padding-bottom: 1rem;
 }
 
-.modal-content h4{
+.modal-content h4 {
   color: #2f2f2f;
   font-family: "Montserrat", sans-serif;
-  margin-bottom: 0%;
-
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.8rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
-.modal-content p{
-    color: #2f2f2f;
+.modal-content p {
+  color: #2f2f2f;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
 
-  
-  }
-.modal-content ul{
-    color: #2f2f2f;
-    font-family: "Montserrat", sans-serif;
-  }
+.modal-content ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+.modal-content ul li {
+  background-color: #f0f0f0;
+  color: #1F61A7;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid #d222a8;
+  white-space: nowrap;
+}
 
 .modal-content a {
-  padding: 0.4rem 1.5rem;
+  display: inline-block;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px 1.5rem;
   cursor: pointer;
-  border-width: 0.1px;
-  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
   background-color: #d222a8;
   color: white;
-  border: solid white;
+  border: 1.5px solid white;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
   font-weight: 600;
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  justify-self: center;
   text-decoration: none;
   text-align: center;
-  white-space: nowrap; /* Impede que o texto quebre */
-  overflow: hidden; /* Garante que o conteúdo não ultrapasse os limites */
-  text-overflow: ellipsis; /* Adiciona "..." caso o texto seja muito grande */
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
 
+.modal-content a:hover {
+  background-color: #802295;
+  border-color: white;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.6);
+  transform: translateY(-2px);
 }
 
 .close {
-  float: right;
-  font-size: 1.5rem;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.8rem;
   cursor: pointer;
   color: #2f2f2f;
+  background: none;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.close:hover {
+  background-color: #f0f0f0;
+  color: #d222a8;
 }
 
 .github-icon {
