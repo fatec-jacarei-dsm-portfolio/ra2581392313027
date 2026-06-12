@@ -351,6 +351,20 @@ p {
   font-family: "Montserrat", sans-serif;
 }
 
+.card .contribuicao {
+  font-size: 0.9rem;
+  margin-top: 0.8rem;
+  border-left: 3px solid #d222a8;
+  padding-left: 0.8rem;
+}
+
+.projeto-pessoal .contribuicao {
+  color: #2f2f2f;
+  font-size: 0.9rem;
+  border-left: 3px solid #1f61a7;
+  padding-left: 0.8rem;
+}
+
 .card button {
   padding: 10px 1.5rem;
   cursor: pointer;
@@ -564,6 +578,66 @@ p {
   font-size: 0.9rem;
   margin: 0.5rem 0 0 0;
   font-style: italic;
+}
+
+/* ==========================
+     Contatos
+     ========================== */
+.contatos {
+  background-color: white;
+  color: #2f2f2f;
+  padding: 2.5rem;
+}
+
+.contatos h2 {
+  color: #1f61a7;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "Anton", serif;
+  margin: 0 0 1rem 0;
+}
+
+.contatos-intro {
+  font-family: "Montserrat", sans-serif;
+  margin: 0 0 2rem 0;
+}
+
+.contatos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  max-width: 640px;
+}
+
+.contato-card {
+  display: block;
+  background-color: rgba(128, 34, 149, 0.08);
+  border-left: 4px solid #d222a8;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contato-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background-color: rgba(128, 34, 149, 0.15);
+}
+
+.contato-card h3 {
+  color: #1f61a7;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 0.4rem 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contato-card p {
+  color: #d222a8;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* ==========================
